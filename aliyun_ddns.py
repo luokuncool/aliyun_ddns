@@ -103,7 +103,7 @@ def get_lastest_local_ip():
 	获取最近一次保存在本地的ip
 	"""
 	print 'ip local path', LOCAL_FILE
-	with open(LOCAL_FILE, 'w+') as f:
+	with open(LOCAL_FILE, 'r') as f:
 		last_ip = f.readline()
 	return last_ip
 
